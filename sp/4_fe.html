@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4번</title>
+
+    <style>
+        html {
+            background-color: blue;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* bring your own prefixes */
+            transform: translate(-50%, -50%);
+        }
+
+        .success_btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: auto;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            /*위에서 아래로 수직 배치*/
+            flex-direction: column;
+            /*중앙정렬*/
+            justify-content: center;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="success_btn">
+            성공
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- 참조 : https://poiemaweb.com/css3-centering -->
+<!-- https://css-tricks.com/quick-css-trick-how-to-center-an-object-exactly-in-the-center/ -->
