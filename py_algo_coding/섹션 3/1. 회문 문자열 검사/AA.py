@@ -12,4 +12,4 @@ def isPalindrome(x):
 
 
 for idx, word in enumerate(words):
-    print(f"#{idx + 1} " + isPalindrome(word))
+    print(f"#{idx + 1} " + isPalindrome(word)) 
