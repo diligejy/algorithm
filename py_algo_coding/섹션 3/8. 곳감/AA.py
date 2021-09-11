@@ -25,10 +25,10 @@ def move(n, n_list, m, m_list):
 
 def cal(n, n_list):
     left = 0
-    right = n
+    right = n - 1
     res = 0
     for idx in range(n):
-        for j in range(left, right):
+        for j in range(left, right + 1):
             res += n_list[idx][j]
         if idx < n // 2:
             left += 1
