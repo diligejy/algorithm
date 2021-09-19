@@ -3,6 +3,7 @@ n_list = [int(i) for i in input().split()]
 
 lt = 1
 rt = sum(n_list)
+maxx = max(n_list)
 
 
 def Count(capacity):
@@ -21,7 +22,7 @@ cnt = 0
 res = 0
 while lt <= rt:
     mid = (lt + rt) // 2
-    if Count(mid) <= m:
+    if mid >= maxx and Count(mid) <= m:
         res = mid
         rt = mid - 1
     else:
