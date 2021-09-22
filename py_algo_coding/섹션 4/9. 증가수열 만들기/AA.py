@@ -1,5 +1,3 @@
-from collections import deque
-
 n = int(input())
 n_list = [int(i) for i in input().split()]
 res = ""
