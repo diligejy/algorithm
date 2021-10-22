@@ -16,17 +16,21 @@ from types import List
 #     return -1
 
 
-def majorityElement(nums: List[int]) -> int:
-    majority_count = int(len(nums))
+# def majorityElement(nums: List[int]) -> int:
+#     majority_count = int(len(nums))
 
-    hashmap = {}
+#     hashmap = {}
 
-    for num in nums:
-        if hashmap.get(num) != None:
-            hashmap[num] = hashmap[num] + 1
-        else:
-            hashmap[num] = 1
+#     for num in nums:
+#         if hashmap.get(num) != None:
+#             hashmap[num] = hashmap[num] + 1
+#         else:
+#             hashmap[num] = 1
 
-        if hashmap[num] > majority_count:
-            return num
-    return -1
+#         if hashmap[num] > majority_count:
+#             return num
+#     return -1
+
+# 정렬을 통한 해결
+def majorityElement(nums: List[int]) ->int:
+    return sorted(nums)[int(len(nums)/2)]
